@@ -1,13 +1,6 @@
+# MMO Chess
 
-`` What is the beginning of eternity, the end of time and space, the beginning of every end and the end of every race?  ``
-
-# Chezz Chess
-
-### Chezz chess is a multiplayer 5 minutes  chess game made using Socket.IO
-
-## How to run it ?
-
-#### Requirements
+### MMO chess is a multiplayer 3 minutes (per player) chess game made using Socket.IO
 
 * Mongo DB
 * Node JS
@@ -35,11 +28,11 @@ $> node .
 
 By this the game should be running on `http://localhost:3000`
 
-## Chezz Chess Project is made out of two parts:
+## MMO Chess Project structure:
 
 * Client  
     * Socket.io(Socket.IO enables real-time bidirectional event-based communication)
-    * HTML5, CSS3, java script , jquery and the awesome bootstrap and font awesome to add the icons
+    * HTML5, CSS3, JavaScript, jquery and the awesome bootstrap and font awesome to add the icons
 
 
 * Server :
@@ -60,20 +53,11 @@ By this the game should be running on `http://localhost:3000`
 
 # Functionality :
 
-1. A player send a request to create a game
-2. the server genrate and creates the new game send the token to the user to use it and send it to the other player
-3. other players join the game by accessing the URL (token) that was send by the user
-4. when the second player joines the game, server connects the two players sockets to the same socket.io room and the game starts once they have connected
-5. when the game ends both players are disconnected and redirected to the home or paly page
-
-
-### Special thanks to :
-
- <a href="https://github.com/jhlywa/chess.js"> Chess.js </a> and  <a href="http://chessboardjs.com">Chessboard.js </a>  libraries.
-
- as well as the aweomse David Washington and hi real time chess basic setup
-
- <a href="https://github.com/dwcares/RealTimeWeb-HOL">
+1. Admin enables the tournament date and time.
+2. Players after entering a room(can contain 20 players), join a random table with other player.
+3. when the second player joines the game, server connects the two player's sockets to the same socket.io room and the game starts once they have connected
+4. The timer starts for both the players for 3 minutes
+5. when the game ends after the time lapse for at least one player, both players are disconnected and scores updated
 
 ## RESTFUL API
 
@@ -97,9 +81,3 @@ Example:
     "lastConnection": "now :p "
 }
 ```
-
-
-
-## Authors:
-* Khaled Daoudieh
-* Dima shahin
