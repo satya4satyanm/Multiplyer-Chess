@@ -60,10 +60,10 @@ By this the game should be running on `http://localhost:3000`
 5. when the game ends after the time lapse for at least one player, both players are disconnected and scores updated
 6. This project will be a replica of chess.com but only the room which can accomodate 20 players on 10 boards
 
-# Timelines: 6 to 8 weeks
-# Cost: 2.4L INR
-# Deliverables: Complete Sorce Code with full rights to modifications
-# Feature enhancements would cost extra
+Timelines: 6 to 8 weeks
+Cost: 2.4L INR
+Deliverables: Complete Sorce Code with full rights to modifications
+Feature enhancements would cost extra
 
 
 ## RESTFUL API
